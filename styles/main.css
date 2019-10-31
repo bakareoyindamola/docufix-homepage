@@ -52,6 +52,7 @@ body {
 .content-wrapper .content {
   width: 90%;
   margin: auto;
+  margin-top: 80px;
 }
 
 .content-wrapper .about-wrapper h3 {
@@ -80,8 +81,12 @@ body {
 
 .content-wrapper .feature-wrapper .feature-content-wrapper .feature-content {
   background-color: azure;
-  padding: 15px;
+  padding: 20px 30px;
   border-radius: 5px;
+}
+
+.content-wrapper .feature-wrapper .feature-content-wrapper .feature-content p {
+  line-height: 30px;
 }
 
 .content-wrapper .plan-wrapper {
@@ -98,11 +103,26 @@ body {
   color: blue;
 }
 
-.feature-content p {
-    line-height: 30px;
+.content-wrapper .plan-wrapper .plan-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: repeat(3, minmax(200px, auto));
+  grid-row-gap: 10px;
 }
 
-@media (min-width: 1200px) {
+.content-wrapper .plan-wrapper .plan-content-wrapper .plan-content {
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1080px) {
+  .feature-content {
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 950px) {
   .banner-text {
     width: 50%;
     margin-top: 60px;
@@ -121,8 +141,10 @@ body {
   .content-wrapper {
     margin-top: 100px;
   }
-  .content-wrapper .content {
-    margin-top: 80px;
+  .content-wrapper .about-wrapper h3,
+  .content-wrapper .feature-wrapper h3,
+  .content-wrapper .plan-wrapper h3 {
+    font-size: 45px;
   }
   .feature-content-wrapper {
     display: -ms-grid;
@@ -131,6 +153,89 @@ body {
         grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: repeat(1, minmax(300px, auto));
     grid-column-gap: 40px;
+  }
+  .feature-content-wrapper .feature-content {
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+  .plan-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 500px;
+    grid-column-gap: 10px;
+  }
+  .plan-content-wrapper .plan-content {
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media (max-width: 1563px) {
+  .banner-text {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1306px) {
+  .banner-text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-text h3 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .banner-text h3 {
+    font-size: 35px;
+    width: 100%;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 916px) {
+  .banner-text h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 788px) {
+  .banner-text {
+    width: 70%;
+  }
+  .banner-text h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 659px) {
+  .banner-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 579px) {
+  .banner-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 517px) {
+  .banner-text {
+    width: 95%;
+  }
+}
+
+@media (max-width: 496px) {
+  .comp-btn {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
