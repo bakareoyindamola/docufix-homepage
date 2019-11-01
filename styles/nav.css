@@ -1,9 +1,8 @@
 
 header {
-    background-color: #3B1F9E;
-    color: black;
     padding: 1em 0;
     position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 header::after {
@@ -18,7 +17,7 @@ header::after {
 }
 
 .logo {
-    color: white;
+    color: black;
     float: left;
     font-size: 1rem;
     margin: 0;
@@ -56,7 +55,7 @@ header::after {
 }
 
 .site-nav a {
-    color: rgba(17, 9, 44, 0.8);
+    color: rgba(17, 9, 44, 0.7);
   display: block;
   padding: 2em 4em 2em 1.5em;
   line-height: 19px;
@@ -90,7 +89,7 @@ header::after {
 .hamburger::after {
   content: '';
   display: block;
-  background: #EBEBD3;
+  background: black;
   height: 3px;
   width: 1.75em;
   border-radius: 3px;
@@ -121,7 +120,8 @@ header::after {
 
     header {
         background-color: transparent;
-        padding: 40px 0px;
+        padding: 52px 0px;
+        box-shadow: none;
     }
   
     .nav-container h1 {
@@ -160,4 +160,19 @@ header::after {
     display: none;
   }
   
+}
+
+.r-icon {
+  font-size: 1em;
+  margin-left: .3em;
+  width: 1em;
+  color: black;
+}
+
+.active {
+  color: blue !important;
+}
+
+.sub-menu {
+  display: none;
 }
