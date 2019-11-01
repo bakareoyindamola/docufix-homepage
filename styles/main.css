@@ -25,12 +25,13 @@ body {
 }
 
 .banner-wrapper .btn {
-  padding: 20px 35px;
+  padding: 10px 20px;
   border-radius: 40px;
   outline: none;
   border: none;
   font-size: 20px;
   line-height: 27px;
+  cursor: pointer;
 }
 
 .banner-wrapper .comp-btn {
@@ -76,6 +77,12 @@ body {
   display: grid;
   grid-auto-rows: repeat(3, minmax(200px, auto));
   grid-row-gap: 15px;
+}
+
+.content-wrapper .feature-wrapper .feature-content-wrapper .feature-content h2 {
+  font-size: 20px;
+  color: #11092C;
+  line-height: 130%;
 }
 
 .content-wrapper .feature-wrapper .feature-content-wrapper .feature-content-asset {
@@ -130,14 +137,205 @@ body {
 .content-wrapper .plan-wrapper .plan-content-wrapper {
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: repeat(3, minmax(200px, auto));
-  grid-row-gap: 10px;
+  grid-auto-rows: repeat(3, minmax(638px, auto));
+  grid-row-gap: 15px;
 }
 
 .content-wrapper .plan-wrapper .plan-content-wrapper .plan-content {
+  text-align: center;
   background-color: #FFF;
   padding: 5px;
   border-radius: 10px;
+}
+
+.p-top {
+  display: block;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  margin: 15px auto 10px;
+  border-radius: 5px;
+  background-color: #150241;
+  opacity: 0.3;
+}
+
+.price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px;
+  color: white;
+}
+
+.price-wrapper span {
+  font-size: 20px;
+}
+
+.price-wrapper .price {
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  opacity: 1;
+}
+
+.plan-year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-year .p-btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.plan-year .p-btn-1 {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.plan-year .p-btn-2 {
+  border-right: none;
+  border-left: none;
+}
+
+.plan-year .p-btn-3 {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.plan-year a {
+  text-decoration: none;
+  color: white;
+}
+
+.plan-year,
+.price-wrapper {
+  display: none;
+}
+
+.plan-text {
+  text-align: left;
+  padding: 70px;
+}
+
+.plan-text p:first-child,
+.plan-text .pt {
+  font-weight: bold;
+}
+
+.pbtn {
+  padding: 12px 40px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.pbtn-1,
+.r1 {
+  background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+}
+
+.pbtn-2,
+.r2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c471f5), to(#fa71cd));
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.pbtn-3,
+.r3 {
+  background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+.pbtn-1,
+.pbtn-3 {
+  margin-bottom: 40px;
+}
+
+.basic-fa,
+.pro-fa,
+.prem-fa {
+  margin-right: 15px;
+}
+
+.basic-fa {
+  color: #7085B6;
+}
+
+.pro-fa {
+  color: #c471f5;
+}
+
+.prem-fa {
+  color: #5271C4;
+}
+
+.pbtn-2 {
+  margin-bottom: 40px;
+}
+
+.p-btn:hover {
+  background-color: #3B1F9E;
+  opacity: .6;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .plan-content-wrapper {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .plan-content-wrapper .plan-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1646px) {
+  .plan-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  .plan-text {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1338px) {
+  .plan-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  .plan-text {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1172px) {
+  .plan-text {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -147,6 +345,31 @@ body {
 }
 
 @media (min-width: 900px) {
+  .banner-wrapper .btn {
+    padding: 20px 35px;
+  }
+  .plan-year,
+  .price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .plan-year {
+    width: 70%;
+    margin: auto;
+  }
+  .plan-text {
+    margin-top: 50px;
+    text-align: left;
+    padding: 70px;
+  }
+  .plan-text p:first-child,
+  .plan-text .pt {
+    font-weight: bold;
+  }
+  .pbtn-2 {
+    margin-bottom: 0px;
+  }
   .banner-text {
     width: 50%;
     margin-top: 60px;
@@ -188,13 +411,20 @@ body {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
+  .w {
+    padding: 3px;
+  }
+  .plan-wrapper {
+    width: 100%;
+    margin: auto;
+  }
   .plan-content-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(638px, auto);
-    grid-column-gap: 19px;
+    grid-column-gap: 20px;
   }
   .plan-content-wrapper .plan-content {
     position: relative;
@@ -202,30 +432,22 @@ body {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   }
-  .plan-content-wrapper .plan-content .circle {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    height: 205.37px;
-    background: #C4C4C4;
-    border-radius: 100%;
-  }
   .plan-content-wrapper .plan-content .rectangle {
     position: absolute;
-    top: 0;
-    left: 0;
-    background: #C4C4C4;
-    width: 100%;
-    height: 75.83px;
+    top: 7px;
+    left: 6px;
+    right: -40px;
+    width: 97%;
+    height: 250px;
+    border-radius: 0 0 240px 50%/60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
-  .plan-content-wrapper .plan-content .c2,
-  .plan-content-wrapper .plan-content .r2 {
-    background: #FFF1F3 !important;
+  .plan-text {
+    padding: 20px;
   }
-  .plan-content-wrapper .plan-content .c3,
-  .plan-content-wrapper .plan-content .r3 {
-    background: #e5c015 !important;
+  .lower-plan {
+    padding: 50px 0px;
   }
 }
 
@@ -297,5 +519,12 @@ body {
   .banner-text {
     width: 95%;
   }
+}
+
+.p-top,
+.price-wrapper,
+.plan-year {
+  position: relative;
+  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */
