@@ -7,12 +7,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .banner-wrapper {
   width: 90%;
   margin: auto;
+  padding-top: 60px !important;
 }
 
 .banner-wrapper h3 {
@@ -59,12 +60,13 @@ body {
 
 .content-wrapper {
   background-color: #E5E5E5;
-  margin: 30px 0px;
+  margin: 30px auto !important;
   padding: 5px 30px;
 }
 
 .content-wrapper .content {
-  margin-top: 50px;
+  margin-top: 0px !important;
+  margin-bottom: 50px !important;
 }
 
 .content-wrapper .about-wrapper h3 {
@@ -73,6 +75,10 @@ body {
   line-height: 130%;
   color: rgba(17, 9, 44, 0.8);
   text-align: center;
+}
+
+.content-wrapper .feature-wrapper {
+  padding-top: 40px;
 }
 
 .content-wrapper .feature-wrapper h3 {
@@ -356,6 +362,10 @@ body {
 }
 
 @media (min-width: 900px) {
+  .banner-wrapper {
+        padding-top: 10px !important;    
+    }
+  
   .banner-wrapper .b-btn {
     padding: 10px 20px;
   }
@@ -536,6 +546,16 @@ body {
   }
   .banner-text {
     width: 95%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .plan-content-wrapper {
+    width: 90% !important;
+    margin: auto;
+  }
+  .plan-text {
+    padding: 45px;
   }
 }
 
